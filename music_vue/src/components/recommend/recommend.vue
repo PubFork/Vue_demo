@@ -6,6 +6,7 @@
           <slider>
             <div v-for="item in recommends">
               <a :href="item.linkUrl">
+                <!-- needsclick fastclick和其他组件冲突时，加这个class属性可以解决（组件一般设置click：true） -->
                 <img class="needsclick" @load="loadImage" :src="item.picUrl">
               </a>
             </div>

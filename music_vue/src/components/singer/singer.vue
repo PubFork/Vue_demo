@@ -54,6 +54,7 @@
         }
         list.forEach((item, index) => {
           if (index < HOT_SINGER_LEN) {
+            // 封装在common/js
             map.hot.items.push(new Singer({
               name: item.Fsinger_name,
               id: item.Fsinger_mid
@@ -82,6 +83,7 @@
             hot.push(val)
           }
         }
+        // 排序
         ret.sort((a, b) => {
           return a.title.charCodeAt(0) - b.title.charCodeAt(0)
         })

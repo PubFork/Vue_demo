@@ -1,4 +1,5 @@
 <template>
+  <!-- 滑屏滚动 -->
   <div ref="wrapper">
     <slot></slot>
   </div>
